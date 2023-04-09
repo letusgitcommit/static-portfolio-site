@@ -87,9 +87,89 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/lora/v32/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-PgFoq92nA.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkq0.woff2) format('woff2');
+}
+
+.container {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+header {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-bottom: solid black 1px;
+  font-family: 'Lora', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+nav li {
+  list-style: none;
+  font-weight: bold;
+}
+
+nav li:hover {
+  color: #5b5ba4
+}
+
+nav li:active {
+  color: #0000b6
+}
+
+nav li+li {
+  margin-left: 2rem;
+}
+
+main {
+  font-family: 'Lora', serif;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 10fr 9fr;
+  grid-column-gap: 2rem;
+}
+
+main h2 {
+  font-size: 2rem;
+}
+
+.section-header {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 3rem;
+}
+
+/*main * {*/
+/*  border: solid red 1px;*/
+/*}*/
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
 
 /*
  * Hide visually and from screen readers
