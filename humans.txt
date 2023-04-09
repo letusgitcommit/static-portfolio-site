@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    David Vaughn -- Website Author
+
+# THANKS
+
+    Codecademy
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Modernizr, Normalize.css
+    HTML5 Boilerplate
