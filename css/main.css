@@ -151,9 +151,30 @@ main h2 {
   font-size: 3rem;
 }
 
-/*main * {*/
-/*  border: solid red 1px;*/
-/*}*/
+.card-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container .card+.card {
+  margin-top: 2rem;
+}
+
+.card {
+  width: auto;
+  border: solid darkgray 1px;
+  box-shadow: #5b5ba4 5px 5px 5px;
+}
+
+.card .header {
+  border-bottom: solid black 1px;
+  text-align: center;
+}
+
+.card .content {
+  margin: 0 1rem;
+}
 
 /* ==========================================================================
    Helper classes
@@ -169,6 +190,16 @@ main h2 {
 
 .align-center {
   align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*

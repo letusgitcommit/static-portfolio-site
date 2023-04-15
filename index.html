@@ -22,16 +22,16 @@
     </div>
     <nav>
       <ul class="flex">
-        <li>Home</li>
-        <li>Contact</li>
-        <li>Projects</li>
-        <li>Resume PDF</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="https://linkedin.com/in/davidvaughn006">Contact</a></li>
+        <li><a href="https://github.com/letusgitcommit?tab=repositories">Projects</a></li>
+        <li><a>Resume PDF</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="container">
-    <section class="resume">
+    <section id="resume">
       <h1 class="section-header">Hello, World!</h1>
       <p>
         My name is David Vaughn. I am a software developer with great skills in
@@ -71,8 +71,49 @@
       </ul>
 
     </section>
-    <section class="projects">
-      <h1>Project Cards Go Here</h1>
+    <section id="projects">
+      <div class="card-container">
+
+        <div class="card">
+          <h3 class="header">
+            Django Portfolio Web App
+          </h3>
+          <p class="content">
+            This project is a TODO app that also serves an API. The API is browsable via Django Rest Framework.
+          </p>
+          <br />
+          <p class="content">
+            Highlights from the technologies used:
+          </p>
+          <ul>
+            <li>Django</li>
+            <li>Django Rest Framework</li>
+            <li>Postgres</li>
+            <li>Heroku</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 class="header">
+            React Portfolio Web App
+          </h3>
+          <p class="content">
+            This project is a React App that interfaces with the Rest API on the Django Web App. One neat thing about
+            this project is that it does authentication through the Django Rest API.
+          </p>
+          <br />
+          <p class="content">
+            Highlights from the technologies used:
+          </p>
+          <ul>
+            <li>React</li>
+            <li>React Bootstrap</li>
+            <li>Netlify</li>
+            <li>Rest API</li>
+          </ul>
+        </div>
+
+      </div>
     </section>
   </main>
 
