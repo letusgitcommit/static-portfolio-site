@@ -11,10 +11,16 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+* {
+  /*border: solid red 1px;*/
+}
+
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.4;
+  box-sizing: border-box;
+  font-family: 'Lora', serif;
 }
 
 /*
@@ -101,19 +107,52 @@ textarea {
   src: url(https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkq0.woff2) format('woff2');
 }
 
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787wsuxJBkq0.woff2) format('woff2');
+}
+
 .container {
   padding-left: 3rem;
   padding-right: 3rem;
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: white;
   padding-top: .5rem;
   padding-bottom: .5rem;
   border-bottom: solid black 1px;
-  font-family: 'Lora', serif;
   font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
+}
+
+footer {
+  position: fixed;
+  height: 4rem;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  border-top: solid black 1px;
+  background-color: white;
+}
+
+#signature {
+  margin-left: 3rem;
+}
+
+#easter-egg {
+  margin-left: 3rem;
+}
+
+nav {
+  margin-right: 3rem;
 }
 
 nav li {
@@ -139,6 +178,7 @@ main {
   grid-template-rows: auto;
   grid-template-columns: 10fr 9fr;
   grid-column-gap: 2rem;
+  margin: 100px 0;
 }
 
 main h2 {
@@ -165,16 +205,82 @@ main h2 {
   width: auto;
   border: solid darkgray 1px;
   box-shadow: #5b5ba4 5px 5px 5px;
+  padding: 0 2rem 2rem 2rem;
 }
 
 .card .header {
   border-bottom: solid black 1px;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .card .content {
   margin: 0 1rem;
 }
+
+.project-link-wrapper {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+
+.project-link {
+  font-size: 1rem;
+  border: solid 1px #5b5ba4;
+  padding: 1rem;
+  font-style: italic;
+}
+
+.project-link:hover {
+  background-color: lightgrey;
+}
+
+.email {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-left: 3rem;
+}
+
+.description-on-flex {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+
+  main {
+    margin: 75px 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description-on-flex {
+    display: inline;
+  }
+
+  .description-on-grid {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 8px
+  }
+
+  main {
+    margin: 50px 0;
+  }
+
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -200,6 +306,10 @@ a {
 a:visited {
   text-decoration: none;
   color: inherit;
+}
+
+.display-none {
+  display: none;
 }
 
 /*
